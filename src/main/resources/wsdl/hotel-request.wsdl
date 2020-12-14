@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           targetNamespace="http://www.trip.com/demosoap/model/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="OTA_HotelResNotifRQ">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="HotelReservations">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="HotelReservation">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="POS">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Source" maxOccurs="unbounded" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="RequestorID" minOccurs="0">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute type="xs:string"
+                                                                                              name="ID"/>
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="BookingChannel" minOccurs="0">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string"
+                                                                                        name="CompanyName"/>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute type="xs:byte" name="Type"/>
+                                                                        <xs:attribute type="xs:string" name="Primary"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="UniqueID">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute type="xs:string" name="ID"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="RoomStays">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="RoomStay">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="RoomTypes">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="RoomType">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element
+                                                                                                name="RoomDescription">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element
+                                                                                                            type="xs:string"
+                                                                                                            name="Text"/>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute type="xs:byte"
+                                                                                                  name="RoomID"/>
+                                                                                    <xs:attribute type="xs:string"
+                                                                                                  name="RoomType"/>
+                                                                                    <xs:attribute type="xs:short"
+                                                                                                  name="RoomTypeCode"/>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="RatePlans">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="RatePlan">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element
+                                                                                                name="RatePlanDescription">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element
+                                                                                                            type="xs:string"
+                                                                                                            name="Text"/>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute type="xs:string"
+                                                                                                  name="RatePlanName"/>
+                                                                                    <xs:attribute type="xs:int"
+                                                                                                  name="RatePlanCode"/>
+                                                                                    <xs:attribute type="xs:date"
+                                                                                                  name="EffectiveDate"/>
+                                                                                    <xs:attribute type="xs:date"
+                                                                                                  name="ExpireDate"/>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="RoomRates">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="RoomRate">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element name="Rates">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element
+                                                                                                            name="Rate"
+                                                                                                            maxOccurs="unbounded"
+                                                                                                            minOccurs="0">
+                                                                                                        <xs:complexType>
+                                                                                                            <xs:sequence>
+                                                                                                                <xs:element
+                                                                                                                        name="Base">
+                                                                                                                    <xs:complexType>
+                                                                                                                        <xs:simpleContent>
+                                                                                                                            <xs:extension
+                                                                                                                                    base="xs:string">
+                                                                                                                                <xs:attribute
+                                                                                                                                        type="xs:short"
+                                                                                                                                        name="AmountAfterTax"
+                                                                                                                                        use="optional"/>
+                                                                                                                                <xs:attribute
+                                                                                                                                        type="xs:string"
+                                                                                                                                        name="CurrencyCode"
+                                                                                                                                        use="optional"/>
+                                                                                                                            </xs:extension>
+                                                                                                                        </xs:simpleContent>
+                                                                                                                    </xs:complexType>
+                                                                                                                </xs:element>
+                                                                                                                <xs:element
+                                                                                                                        name="Total">
+                                                                                                                    <xs:complexType>
+                                                                                                                        <xs:simpleContent>
+                                                                                                                            <xs:extension
+                                                                                                                                    base="xs:string">
+                                                                                                                                <xs:attribute
+                                                                                                                                        type="xs:short"
+                                                                                                                                        name="AmountAfterTax"
+                                                                                                                                        use="optional"/>
+                                                                                                                                <xs:attribute
+                                                                                                                                        type="xs:string"
+                                                                                                                                        name="CurrencyCode"
+                                                                                                                                        use="optional"/>
+                                                                                                                            </xs:extension>
+                                                                                                                        </xs:simpleContent>
+                                                                                                                    </xs:complexType>
+                                                                                                                </xs:element>
+                                                                                                            </xs:sequence>
+                                                                                                            <xs:attribute
+                                                                                                                    type="xs:byte"
+                                                                                                                    name="UnitMultiplier"
+                                                                                                                    use="optional"/>
+                                                                                                            <xs:attribute
+                                                                                                                    type="xs:date"
+                                                                                                                    name="EffectiveDate"
+                                                                                                                    use="optional"/>
+                                                                                                            <xs:attribute
+                                                                                                                    type="xs:date"
+                                                                                                                    name="ExpireDate"
+                                                                                                                    use="optional"/>
+                                                                                                        </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute type="xs:date"
+                                                                                                  name="EffectiveDate"/>
+                                                                                    <xs:attribute type="xs:date"
+                                                                                                  name="ExpireDate"/>
+                                                                                    <xs:attribute type="xs:short"
+                                                                                                  name="RoomTypeCode"/>
+                                                                                    <xs:attribute type="xs:int"
+                                                                                                  name="RatePlanCode"/>
+                                                                                    <xs:attribute type="xs:byte"
+                                                                                                  name="RoomID"/>
+                                                                                    <xs:attribute type="xs:byte"
+                                                                                                  name="NumberOfUnits"/>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="GuestCounts">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="GuestCount">
+                                                                                <xs:complexType>
+                                                                                    <xs:simpleContent>
+                                                                                        <xs:extension base="xs:string">
+                                                                                            <xs:attribute type="xs:byte"
+                                                                                                          name="AgeQualifyingCode"/>
+                                                                                            <xs:attribute type="xs:byte"
+                                                                                                          name="Count"/>
+                                                                                        </xs:extension>
+                                                                                    </xs:simpleContent>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="TimeSpan">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute type="xs:date"
+                                                                                              name="Start"/>
+                                                                                <xs:attribute type="xs:date"
+                                                                                              name="End"/>
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="Total">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute type="xs:string"
+                                                                                              name="CurrencyCode"/>
+                                                                                <xs:attribute type="xs:short"
+                                                                                              name="AmountAfterTax"/>
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="ResGuestRPHs">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="ResGuestRPH"
+                                                                                        maxOccurs="unbounded"
+                                                                                        minOccurs="0">
+                                                                                <xs:complexType>
+                                                                                    <xs:simpleContent>
+                                                                                        <xs:extension base="xs:string">
+                                                                                            <xs:attribute type="xs:byte"
+                                                                                                          name="RPH"
+                                                                                                          use="optional"/>
+                                                                                        </xs:extension>
+                                                                                    </xs:simpleContent>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ResGuests">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ResGuest" maxOccurs="unbounded" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Profiles">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="ProfileInfo">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element name="Profile">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element
+                                                                                                            name="Customer">
+                                                                                                        <xs:complexType>
+                                                                                                            <xs:sequence>
+                                                                                                                <xs:element
+                                                                                                                        name="PersonName">
+                                                                                                                    <xs:complexType>
+                                                                                                                        <xs:sequence>
+                                                                                                                            <xs:element
+                                                                                                                                    type="xs:string"
+                                                                                                                                    name="GivenName"/>
+                                                                                                                            <xs:element
+                                                                                                                                    type="xs:string"
+                                                                                                                                    name="Surname"/>
+                                                                                                                        </xs:sequence>
+                                                                                                                    </xs:complexType>
+                                                                                                                </xs:element>
+                                                                                                                <xs:element
+                                                                                                                        name="Telephone"
+                                                                                                                        minOccurs="0">
+                                                                                                                    <xs:complexType>
+                                                                                                                        <xs:simpleContent>
+                                                                                                                            <xs:extension
+                                                                                                                                    base="xs:string">
+                                                                                                                                <xs:attribute
+                                                                                                                                        type="xs:int"
+                                                                                                                                        name="PhoneNumber"/>
+                                                                                                                                <xs:attribute
+                                                                                                                                        type="xs:byte"
+                                                                                                                                        name="PhoneTechType"/>
+                                                                                                                            </xs:extension>
+                                                                                                                        </xs:simpleContent>
+                                                                                                                    </xs:complexType>
+                                                                                                                </xs:element>
+                                                                                                                <xs:element
+                                                                                                                        name="Email"
+                                                                                                                        minOccurs="0">
+                                                                                                                    <xs:complexType>
+                                                                                                                        <xs:simpleContent>
+                                                                                                                            <xs:extension
+                                                                                                                                    base="xs:string">
+                                                                                                                                <xs:attribute
+                                                                                                                                        type="xs:byte"
+                                                                                                                                        name="EmailType"/>
+                                                                                                                            </xs:extension>
+                                                                                                                        </xs:simpleContent>
+                                                                                                                    </xs:complexType>
+                                                                                                                </xs:element>
+                                                                                                                <xs:element
+                                                                                                                        name="Address"
+                                                                                                                        minOccurs="0">
+                                                                                                                    <xs:complexType>
+                                                                                                                        <xs:sequence>
+                                                                                                                            <xs:element
+                                                                                                                                    type="xs:string"
+                                                                                                                                    name="AddressLine"/>
+                                                                                                                            <xs:element
+                                                                                                                                    type="xs:string"
+                                                                                                                                    name="CityName"/>
+                                                                                                                            <xs:element
+                                                                                                                                    type="xs:short"
+                                                                                                                                    name="PostalCode"/>
+                                                                                                                            <xs:element
+                                                                                                                                    type="xs:string"
+                                                                                                                                    name="StateProv"/>
+                                                                                                                            <xs:element
+                                                                                                                                    type="xs:string"
+                                                                                                                                    name="CountryName"/>
+                                                                                                                        </xs:sequence>
+                                                                                                                        <xs:attribute
+                                                                                                                                type="xs:byte"
+                                                                                                                                name="Type"/>
+                                                                                                                    </xs:complexType>
+                                                                                                                </xs:element>
+                                                                                                            </xs:sequence>
+                                                                                                            <xs:attribute
+                                                                                                                    type="xs:string"
+                                                                                                                    name="VIP_Indicator"
+                                                                                                                    use="optional"/>
+                                                                                                        </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                                <xs:attribute
+                                                                                                        type="xs:byte"
+                                                                                                        name="ProfileType"
+                                                                                                        use="optional"/>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute type="xs:byte" name="ResGuestRPH"
+                                                                          use="optional"/>
+                                                            <xs:attribute type="xs:time" name="ArrivalTime"
+                                                                          use="optional"/>
+                                                            <xs:attribute type="xs:string" name="PrimaryIndicator"
+                                                                          use="optional"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ResGlobalInfo">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="TimeSpan">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute type="xs:date" name="End"/>
+                                                                    <xs:attribute type="xs:date" name="Start"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="Comments">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Comment">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="Text"/>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute type="xs:string"
+                                                                                      name="GuestViewable"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="Total">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Taxes">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="Tax">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element
+                                                                                                name="TaxDescription">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element
+                                                                                                            type="xs:string"
+                                                                                                            name="Text"/>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute type="xs:float"
+                                                                                                  name="Amount"/>
+                                                                                    <xs:attribute type="xs:byte"
+                                                                                                  name="Percent"/>
+                                                                                    <xs:attribute type="xs:string"
+                                                                                                  name="CurrencyCode"/>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute type="xs:string"
+                                                                                      name="CurrencyCode"/>
+                                                                        <xs:attribute type="xs:float" name="Amount"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute type="xs:short" name="AmountAfterTax"/>
+                                                            <xs:attribute type="xs:string" name="CurrencyCode"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="HotelReservationIDs">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="HotelReservationID"
+                                                                            maxOccurs="unbounded" minOccurs="0">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute type="xs:byte"
+                                                                                              name="ResID_Type"
+                                                                                              use="optional"/>
+                                                                                <xs:attribute type="xs:string"
+                                                                                              name="ResID_Source"
+                                                                                              use="optional"/>
+                                                                                <xs:attribute type="xs:string"
+                                                                                              name="ResID_Value"
+                                                                                              use="optional"/>
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="Profiles">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="ProfileInfo">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="Profile">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element name="Customer">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element
+                                                                                                            name="PersonName">
+                                                                                                        <xs:complexType>
+                                                                                                            <xs:sequence>
+                                                                                                                <xs:element
+                                                                                                                        type="xs:string"
+                                                                                                                        name="GivenName"/>
+                                                                                                                <xs:element
+                                                                                                                        type="xs:string"
+                                                                                                                        name="Surname"/>
+                                                                                                            </xs:sequence>
+                                                                                                        </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                    <xs:element
+                                                                                                            name="Telephone">
+                                                                                                        <xs:complexType>
+                                                                                                            <xs:simpleContent>
+                                                                                                                <xs:extension
+                                                                                                                        base="xs:string">
+                                                                                                                    <xs:attribute
+                                                                                                                            type="xs:int"
+                                                                                                                            name="PhoneNumber"/>
+                                                                                                                    <xs:attribute
+                                                                                                                            type="xs:byte"
+                                                                                                                            name="PhoneTechType"/>
+                                                                                                                </xs:extension>
+                                                                                                            </xs:simpleContent>
+                                                                                                        </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                    <xs:element
+                                                                                                            name="Email">
+                                                                                                        <xs:complexType>
+                                                                                                            <xs:simpleContent>
+                                                                                                                <xs:extension
+                                                                                                                        base="xs:string">
+                                                                                                                    <xs:attribute
+                                                                                                                            type="xs:byte"
+                                                                                                                            name="EmailType"/>
+                                                                                                                </xs:extension>
+                                                                                                            </xs:simpleContent>
+                                                                                                        </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                    <xs:element
+                                                                                                            name="Address">
+                                                                                                        <xs:complexType>
+                                                                                                            <xs:sequence>
+                                                                                                                <xs:element
+                                                                                                                        type="xs:string"
+                                                                                                                        name="AddressLine"/>
+                                                                                                                <xs:element
+                                                                                                                        type="xs:string"
+                                                                                                                        name="CityName"/>
+                                                                                                                <xs:element
+                                                                                                                        type="xs:short"
+                                                                                                                        name="PostalCode"/>
+                                                                                                                <xs:element
+                                                                                                                        type="xs:string"
+                                                                                                                        name="StateProv"/>
+                                                                                                                <xs:element
+                                                                                                                        type="xs:string"
+                                                                                                                        name="CountryName"/>
+                                                                                                            </xs:sequence>
+                                                                                                            <xs:attribute
+                                                                                                                    type="xs:byte"
+                                                                                                                    name="Type"/>
+                                                                                                        </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                                <xs:attribute
+                                                                                                        type="xs:string"
+                                                                                                        name="VIP_Indicator"/>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute type="xs:byte"
+                                                                                                  name="ProfileType"/>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="BasicPropertyInfo">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute type="xs:short" name="HotelCode"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:dateTime" name="CreateDateTime"/>
+                                    <xs:attribute type="xs:dateTime" name="LastModifyDateTime"/>
+                                    <xs:attribute type="xs:string" name="ResStatus"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="EchoToken"/>
+            <xs:attribute type="xs:dateTime" name="TimeStamp"/>
+            <xs:attribute type="xs:float" name="Version"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="OTA_HotelResNotifRS">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:string" name="Success"/>
+                <xs:element name="HotelReservations">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="HotelReservation">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="UniqueID">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute type="xs:string" name="ID"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ResGlobalInfo">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="HotelReservationIDs">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="HotelReservationID">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute type="xs:byte" name="ResID_Type"/>
+                                                                                <xs:attribute type="xs:string" name="ResID_Value"/>
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="EchoToken"/>
+            <xs:attribute type="xs:dateTime" name="TimeStamp"/>
+            <xs:attribute type="xs:string" name="Target"/>
+            <xs:attribute type="xs:float" name="Version"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
