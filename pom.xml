@@ -68,10 +68,10 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.springframework.boot</groupId>-->
+<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--			</plugin>-->
 <!--			<plugin>-->
 <!--				<groupId>org.jvnet.jaxb2.maven2</groupId>-->
 <!--				<artifactId>maven-jaxb2-plugin</artifactId>-->
@@ -84,7 +84,7 @@
 <!--					</execution>-->
 <!--				</executions>-->
 <!--				<configuration>-->
-<!--					<generatePackage>com.trip.soapproducer.country</generatePackage>-->
+<!--					<generatePackage>com.iunona_trip.soapproducer.reservation</generatePackage>-->
 <!--					<generateDirectory>${project.basedir}/src/main/java</generateDirectory>-->
 <!--					<schemaDirectory>${project.basedir}/src/main/resources/wsdl</schemaDirectory>-->
 <!--					<schemaIncludes>-->
@@ -93,26 +93,26 @@
 <!--				</configuration>-->
 <!--			</plugin>-->
 			<!-- tag::xsd[] -->
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>jaxb2-maven-plugin</artifactId>
-				<version>2.5.0</version>
-				<executions>
-					<execution>
-						<id>xjc</id>
-						<goals>
-							<goal>xjc</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<sources>
-<!--						<generatePackage>com.trip.soapproducer.country</generatePackage>-->
-						<source>${project.basedir}/src/main/resources/loanEligibility.xsd</source>
-					</sources>
-				</configuration>
-			</plugin>
-			<!-- end::xsd[] -->
+<!--			<plugin>-->
+<!--				<groupId>org.codehaus.mojo</groupId>-->
+<!--				<artifactId>jaxb2-maven-plugin</artifactId>-->
+<!--				<version>2.5.0</version>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>xjc</id>-->
+<!--						<goals>-->
+<!--							<goal>xjc</goal>-->
+<!--						</goals>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--				<configuration>-->
+<!--					<sources>-->
+<!--						<source>${project.basedir}/src/main/resources/hotel-request.xsd</source>-->
+<!--					</sources>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
+<!--			 end::xsd[] -->
+
 		</plugins>
 	</build>
 

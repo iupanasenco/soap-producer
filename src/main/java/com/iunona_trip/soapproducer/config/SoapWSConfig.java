@@ -1,4 +1,4 @@
-package com.trip.soapproducer.config;
+package com.iunona_trip.soapproducer.config;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
@@ -23,12 +23,12 @@ public class SoapWSConfig {
         return new ServletRegistrationBean<MessageDispatcherServlet>(servlet, "/ws/*");
     }
 
-    @Bean(name = "loanEligibility")
+    @Bean(name = "validateHotelRequest")
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema schema) {
         DefaultWsdl11Definition defaultWsdl11Definition = new DefaultWsdl11Definition();
-        defaultWsdl11Definition.setPortTypeName("LoanEligibilityIndicator");
+        defaultWsdl11Definition.setPortTypeName("HotelReservation");
         defaultWsdl11Definition.setLocationUri("/ws");
-        defaultWsdl11Definition.setTargetNamespace("http://www.iunona-trip.net/soapproducer/loanEligibility/");
+        defaultWsdl11Definition.setTargetNamespace("http://www.iunona-trip.com/soapproducer/reservation/");
         defaultWsdl11Definition.setSchema(schema);
         return defaultWsdl11Definition;
 
@@ -36,7 +36,7 @@ public class SoapWSConfig {
 
     @Bean
     public XsdSchema schema() {
-        return new SimpleXsdSchema(new ClassPathResource("loanEligibility.xsd"));
+        return new SimpleXsdSchema(new ClassPathResource("hotel-request.xsd"));
     }
 
 }

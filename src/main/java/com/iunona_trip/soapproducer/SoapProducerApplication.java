@@ -1,4 +1,4 @@
-package com.trip.soapproducer;
+package com.iunona_trip.soapproducer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
