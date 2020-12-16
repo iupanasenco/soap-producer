@@ -20,7 +20,7 @@ Generated on: 2020.12.15 at 10:56:07 AM EET
             
         <bindings if-exists="true" scd="tns:OTA_HotelResNotifRQ">
                   
-            <class ref="com.iunona_trip.soapproducer.reservation.OTAHotelResNotifRQ"/>
+            <class ref="com.iunona_trip.soapproducer.reservation.OTAHotelResNotifRQRequest"/>
                 
         </bindings>
             

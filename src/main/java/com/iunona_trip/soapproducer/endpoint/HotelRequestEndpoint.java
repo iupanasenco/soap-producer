@@ -1,6 +1,6 @@
 package com.iunona_trip.soapproducer.endpoint;
 
-import com.iunona_trip.soapproducer.reservation.OTAHotelResNotifRQ;
+import com.iunona_trip.soapproducer.reservation.OTAHotelResNotifRQRequest;
 import com.iunona_trip.soapproducer.reservation.OTAHotelResNotifRS;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
@@ -18,10 +18,14 @@ public class HotelRequestEndpoint {
 
     @PayloadRoot(namespace = NAMESPACE, localPart = "OTA_HotelResNotifRQRequest")
     @ResponsePayload
-    public OTAHotelResNotifRS validateHotelRequest(@RequestPayload OTAHotelResNotifRQ resNotifRQ) {
-        log.info(resNotifRQ.getHotelReservations().getHotelReservation().toString());
+    public OTAHotelResNotifRS validateHotelRequest(@RequestPayload OTAHotelResNotifRQRequest resNotifRQ) {
+        log.info(resNotifRQ.getHotelReservations().getHotelReservation().getUniqueID().getID());
         OTAHotelResNotifRS testHotelResponse = new OTAHotelResNotifRS();
         testHotelResponse.setSuccess("success");
+        testHotelResponse.setTimeStamp(resNotifRQ.getTimeStamp());
+        testHotelResponse.setVersion(1.0f);
+
+        //reservation to be set from the request data
         return testHotelResponse;
     }
 

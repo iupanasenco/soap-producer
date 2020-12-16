@@ -658,11 +658,11 @@ import javax.xml.datatype.XMLGregorianCalendar;
 @XmlType(name = "", propOrder = {
     "hotelReservations"
 })
-@XmlRootElement(name = "OTA_HotelResNotifRQ")
-public class OTAHotelResNotifRQ {
+@XmlRootElement(name = "OTA_HotelResNotifRQRequest")
+public class OTAHotelResNotifRQRequest {
 
     @XmlElement(name = "HotelReservations", required = true)
-    protected OTAHotelResNotifRQ.HotelReservations hotelReservations;
+    protected OTAHotelResNotifRQRequest.HotelReservations hotelReservations;
     @XmlAttribute(name = "EchoToken")
     protected String echoToken;
     @XmlAttribute(name = "TimeStamp")
@@ -676,10 +676,10 @@ public class OTAHotelResNotifRQ {
      * 
      * @return
      *     possible object is
-     *     {@link OTAHotelResNotifRQ.HotelReservations }
+     *     {@link OTAHotelResNotifRQRequest.HotelReservations }
      *     
      */
-    public OTAHotelResNotifRQ.HotelReservations getHotelReservations() {
+    public OTAHotelResNotifRQRequest.HotelReservations getHotelReservations() {
         return hotelReservations;
     }
 
@@ -688,10 +688,10 @@ public class OTAHotelResNotifRQ {
      * 
      * @param value
      *     allowed object is
-     *     {@link OTAHotelResNotifRQ.HotelReservations }
+     *     {@link OTAHotelResNotifRQRequest.HotelReservations }
      *     
      */
-    public void setHotelReservations(OTAHotelResNotifRQ.HotelReservations value) {
+    public void setHotelReservations(OTAHotelResNotifRQRequest.HotelReservations value) {
         this.hotelReservations = value;
     }
 
@@ -1395,17 +1395,17 @@ public class OTAHotelResNotifRQ {
     public static class HotelReservations {
 
         @XmlElement(name = "HotelReservation", required = true)
-        protected OTAHotelResNotifRQ.HotelReservations.HotelReservation hotelReservation;
+        protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation hotelReservation;
 
         /**
          * Gets the value of the hotelReservation property.
          * 
          * @return
          *     possible object is
-         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation }
+         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation }
          *     
          */
-        public OTAHotelResNotifRQ.HotelReservations.HotelReservation getHotelReservation() {
+        public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation getHotelReservation() {
             return hotelReservation;
         }
 
@@ -1414,10 +1414,10 @@ public class OTAHotelResNotifRQ {
          * 
          * @param value
          *     allowed object is
-         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation }
+         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation }
          *     
          */
-        public void setHotelReservation(OTAHotelResNotifRQ.HotelReservations.HotelReservation value) {
+        public void setHotelReservation(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation value) {
             this.hotelReservation = value;
         }
 
@@ -2043,15 +2043,15 @@ public class OTAHotelResNotifRQ {
         public static class HotelReservation {
 
             @XmlElement(name = "POS", required = true)
-            protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS pos;
+            protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS pos;
             @XmlElement(name = "UniqueID", required = true)
-            protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.UniqueID uniqueID;
+            protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.UniqueID uniqueID;
             @XmlElement(name = "RoomStays", required = true)
-            protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays roomStays;
+            protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays roomStays;
             @XmlElement(name = "ResGuests", required = true)
-            protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests resGuests;
+            protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests resGuests;
             @XmlElement(name = "ResGlobalInfo", required = true)
-            protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo resGlobalInfo;
+            protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo resGlobalInfo;
             @XmlAttribute(name = "CreateDateTime")
             @XmlSchemaType(name = "dateTime")
             protected XMLGregorianCalendar createDateTime;
@@ -2066,10 +2066,10 @@ public class OTAHotelResNotifRQ {
              * 
              * @return
              *     possible object is
-             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS }
+             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS }
              *     
              */
-            public OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS getPOS() {
+            public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS getPOS() {
                 return pos;
             }
 
@@ -2078,10 +2078,10 @@ public class OTAHotelResNotifRQ {
              * 
              * @param value
              *     allowed object is
-             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS }
+             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS }
              *     
              */
-            public void setPOS(OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS value) {
+            public void setPOS(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS value) {
                 this.pos = value;
             }
 
@@ -2090,10 +2090,10 @@ public class OTAHotelResNotifRQ {
              * 
              * @return
              *     possible object is
-             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.UniqueID }
+             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.UniqueID }
              *     
              */
-            public OTAHotelResNotifRQ.HotelReservations.HotelReservation.UniqueID getUniqueID() {
+            public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.UniqueID getUniqueID() {
                 return uniqueID;
             }
 
@@ -2102,10 +2102,10 @@ public class OTAHotelResNotifRQ {
              * 
              * @param value
              *     allowed object is
-             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.UniqueID }
+             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.UniqueID }
              *     
              */
-            public void setUniqueID(OTAHotelResNotifRQ.HotelReservations.HotelReservation.UniqueID value) {
+            public void setUniqueID(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.UniqueID value) {
                 this.uniqueID = value;
             }
 
@@ -2114,10 +2114,10 @@ public class OTAHotelResNotifRQ {
              * 
              * @return
              *     possible object is
-             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays }
+             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays }
              *     
              */
-            public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays getRoomStays() {
+            public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays getRoomStays() {
                 return roomStays;
             }
 
@@ -2126,10 +2126,10 @@ public class OTAHotelResNotifRQ {
              * 
              * @param value
              *     allowed object is
-             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays }
+             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays }
              *     
              */
-            public void setRoomStays(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays value) {
+            public void setRoomStays(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays value) {
                 this.roomStays = value;
             }
 
@@ -2138,10 +2138,10 @@ public class OTAHotelResNotifRQ {
              * 
              * @return
              *     possible object is
-             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests }
+             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests }
              *     
              */
-            public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests getResGuests() {
+            public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests getResGuests() {
                 return resGuests;
             }
 
@@ -2150,10 +2150,10 @@ public class OTAHotelResNotifRQ {
              * 
              * @param value
              *     allowed object is
-             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests }
+             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests }
              *     
              */
-            public void setResGuests(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests value) {
+            public void setResGuests(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests value) {
                 this.resGuests = value;
             }
 
@@ -2162,10 +2162,10 @@ public class OTAHotelResNotifRQ {
              * 
              * @return
              *     possible object is
-             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo }
+             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo }
              *     
              */
-            public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo getResGlobalInfo() {
+            public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo getResGlobalInfo() {
                 return resGlobalInfo;
             }
 
@@ -2174,10 +2174,10 @@ public class OTAHotelResNotifRQ {
              * 
              * @param value
              *     allowed object is
-             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo }
+             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo }
              *     
              */
-            public void setResGlobalInfo(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo value) {
+            public void setResGlobalInfo(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo value) {
                 this.resGlobalInfo = value;
             }
 
@@ -2311,7 +2311,7 @@ public class OTAHotelResNotifRQ {
             public static class POS {
 
                 @XmlElement(name = "Source")
-                protected List<OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source> source;
+                protected List<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source> source;
 
                 /**
                  * Gets the value of the source property.
@@ -2331,13 +2331,13 @@ public class OTAHotelResNotifRQ {
                  * 
                  * <p>
                  * Objects of the following type(s) are allowed in the list
-                 * {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source }
+                 * {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source }
                  * 
                  * 
                  */
-                public List<OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source> getSource() {
+                public List<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source> getSource() {
                     if (source == null) {
-                        source = new ArrayList<OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source>();
+                        source = new ArrayList<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source>();
                     }
                     return this.source;
                 }
@@ -2391,19 +2391,19 @@ public class OTAHotelResNotifRQ {
                 public static class Source {
 
                     @XmlElement(name = "RequestorID")
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source.RequestorID requestorID;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source.RequestorID requestorID;
                     @XmlElement(name = "BookingChannel")
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source.BookingChannel bookingChannel;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source.BookingChannel bookingChannel;
 
                     /**
                      * Gets the value of the requestorID property.
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source.RequestorID }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source.RequestorID }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source.RequestorID getRequestorID() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source.RequestorID getRequestorID() {
                         return requestorID;
                     }
 
@@ -2412,10 +2412,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source.RequestorID }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source.RequestorID }
                      *     
                      */
-                    public void setRequestorID(OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source.RequestorID value) {
+                    public void setRequestorID(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source.RequestorID value) {
                         this.requestorID = value;
                     }
 
@@ -2424,10 +2424,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source.BookingChannel }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source.BookingChannel }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source.BookingChannel getBookingChannel() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source.BookingChannel getBookingChannel() {
                         return bookingChannel;
                     }
 
@@ -2436,10 +2436,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source.BookingChannel }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source.BookingChannel }
                      *     
                      */
-                    public void setBookingChannel(OTAHotelResNotifRQ.HotelReservations.HotelReservation.POS.Source.BookingChannel value) {
+                    public void setBookingChannel(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.POS.Source.BookingChannel value) {
                         this.bookingChannel = value;
                     }
 
@@ -2865,27 +2865,27 @@ public class OTAHotelResNotifRQ {
             public static class ResGlobalInfo {
 
                 @XmlElement(name = "TimeSpan", required = true)
-                protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.TimeSpan timeSpan;
+                protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.TimeSpan timeSpan;
                 @XmlElement(name = "Comments", required = true)
-                protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Comments comments;
+                protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Comments comments;
                 @XmlElement(name = "Total", required = true)
-                protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total total;
+                protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total total;
                 @XmlElement(name = "HotelReservationIDs", required = true)
-                protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs hotelReservationIDs;
+                protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs hotelReservationIDs;
                 @XmlElement(name = "Profiles", required = true)
-                protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles profiles;
+                protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles profiles;
                 @XmlElement(name = "BasicPropertyInfo", required = true)
-                protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.BasicPropertyInfo basicPropertyInfo;
+                protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.BasicPropertyInfo basicPropertyInfo;
 
                 /**
                  * Gets the value of the timeSpan property.
                  * 
                  * @return
                  *     possible object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.TimeSpan }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.TimeSpan }
                  *     
                  */
-                public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.TimeSpan getTimeSpan() {
+                public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.TimeSpan getTimeSpan() {
                     return timeSpan;
                 }
 
@@ -2894,10 +2894,10 @@ public class OTAHotelResNotifRQ {
                  * 
                  * @param value
                  *     allowed object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.TimeSpan }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.TimeSpan }
                  *     
                  */
-                public void setTimeSpan(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.TimeSpan value) {
+                public void setTimeSpan(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.TimeSpan value) {
                     this.timeSpan = value;
                 }
 
@@ -2906,10 +2906,10 @@ public class OTAHotelResNotifRQ {
                  * 
                  * @return
                  *     possible object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Comments }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Comments }
                  *     
                  */
-                public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Comments getComments() {
+                public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Comments getComments() {
                     return comments;
                 }
 
@@ -2918,10 +2918,10 @@ public class OTAHotelResNotifRQ {
                  * 
                  * @param value
                  *     allowed object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Comments }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Comments }
                  *     
                  */
-                public void setComments(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Comments value) {
+                public void setComments(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Comments value) {
                     this.comments = value;
                 }
 
@@ -2930,10 +2930,10 @@ public class OTAHotelResNotifRQ {
                  * 
                  * @return
                  *     possible object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total }
                  *     
                  */
-                public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total getTotal() {
+                public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total getTotal() {
                     return total;
                 }
 
@@ -2942,10 +2942,10 @@ public class OTAHotelResNotifRQ {
                  * 
                  * @param value
                  *     allowed object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total }
                  *     
                  */
-                public void setTotal(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total value) {
+                public void setTotal(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total value) {
                     this.total = value;
                 }
 
@@ -2954,10 +2954,10 @@ public class OTAHotelResNotifRQ {
                  * 
                  * @return
                  *     possible object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs }
                  *     
                  */
-                public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs getHotelReservationIDs() {
+                public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs getHotelReservationIDs() {
                     return hotelReservationIDs;
                 }
 
@@ -2966,10 +2966,10 @@ public class OTAHotelResNotifRQ {
                  * 
                  * @param value
                  *     allowed object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs }
                  *     
                  */
-                public void setHotelReservationIDs(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs value) {
+                public void setHotelReservationIDs(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs value) {
                     this.hotelReservationIDs = value;
                 }
 
@@ -2978,10 +2978,10 @@ public class OTAHotelResNotifRQ {
                  * 
                  * @return
                  *     possible object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles }
                  *     
                  */
-                public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles getProfiles() {
+                public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles getProfiles() {
                     return profiles;
                 }
 
@@ -2990,10 +2990,10 @@ public class OTAHotelResNotifRQ {
                  * 
                  * @param value
                  *     allowed object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles }
                  *     
                  */
-                public void setProfiles(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles value) {
+                public void setProfiles(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles value) {
                     this.profiles = value;
                 }
 
@@ -3002,10 +3002,10 @@ public class OTAHotelResNotifRQ {
                  * 
                  * @return
                  *     possible object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.BasicPropertyInfo }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.BasicPropertyInfo }
                  *     
                  */
-                public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.BasicPropertyInfo getBasicPropertyInfo() {
+                public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.BasicPropertyInfo getBasicPropertyInfo() {
                     return basicPropertyInfo;
                 }
 
@@ -3014,10 +3014,10 @@ public class OTAHotelResNotifRQ {
                  * 
                  * @param value
                  *     allowed object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.BasicPropertyInfo }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.BasicPropertyInfo }
                  *     
                  */
-                public void setBasicPropertyInfo(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.BasicPropertyInfo value) {
+                public void setBasicPropertyInfo(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.BasicPropertyInfo value) {
                     this.basicPropertyInfo = value;
                 }
 
@@ -3138,17 +3138,17 @@ public class OTAHotelResNotifRQ {
                 public static class Comments {
 
                     @XmlElement(name = "Comment", required = true)
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Comments.Comment comment;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Comments.Comment comment;
 
                     /**
                      * Gets the value of the comment property.
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Comments.Comment }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Comments.Comment }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Comments.Comment getComment() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Comments.Comment getComment() {
                         return comment;
                     }
 
@@ -3157,10 +3157,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Comments.Comment }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Comments.Comment }
                      *     
                      */
-                    public void setComment(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Comments.Comment value) {
+                    public void setComment(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Comments.Comment value) {
                         this.comment = value;
                     }
 
@@ -3285,7 +3285,7 @@ public class OTAHotelResNotifRQ {
                 public static class HotelReservationIDs {
 
                     @XmlElement(name = "HotelReservationID")
-                    protected List<OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs.HotelReservationID> hotelReservationID;
+                    protected List<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs.HotelReservationID> hotelReservationID;
 
                     /**
                      * Gets the value of the hotelReservationID property.
@@ -3305,13 +3305,13 @@ public class OTAHotelResNotifRQ {
                      * 
                      * <p>
                      * Objects of the following type(s) are allowed in the list
-                     * {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs.HotelReservationID }
+                     * {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs.HotelReservationID }
                      * 
                      * 
                      */
-                    public List<OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs.HotelReservationID> getHotelReservationID() {
+                    public List<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs.HotelReservationID> getHotelReservationID() {
                         if (hotelReservationID == null) {
-                            hotelReservationID = new ArrayList<OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs.HotelReservationID>();
+                            hotelReservationID = new ArrayList<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.HotelReservationIDs.HotelReservationID>();
                         }
                         return this.hotelReservationID;
                     }
@@ -3556,17 +3556,17 @@ public class OTAHotelResNotifRQ {
                 public static class Profiles {
 
                     @XmlElement(name = "ProfileInfo", required = true)
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo profileInfo;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo profileInfo;
 
                     /**
                      * Gets the value of the profileInfo property.
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo getProfileInfo() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo getProfileInfo() {
                         return profileInfo;
                     }
 
@@ -3575,10 +3575,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo }
                      *     
                      */
-                    public void setProfileInfo(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo value) {
+                    public void setProfileInfo(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo value) {
                         this.profileInfo = value;
                     }
 
@@ -3677,17 +3677,17 @@ public class OTAHotelResNotifRQ {
                     public static class ProfileInfo {
 
                         @XmlElement(name = "Profile", required = true)
-                        protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile profile;
+                        protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile profile;
 
                         /**
                          * Gets the value of the profile property.
                          * 
                          * @return
                          *     possible object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile }
                          *     
                          */
-                        public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile getProfile() {
+                        public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile getProfile() {
                             return profile;
                         }
 
@@ -3696,10 +3696,10 @@ public class OTAHotelResNotifRQ {
                          * 
                          * @param value
                          *     allowed object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile }
                          *     
                          */
-                        public void setProfile(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile value) {
+                        public void setProfile(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile value) {
                             this.profile = value;
                         }
 
@@ -3788,7 +3788,7 @@ public class OTAHotelResNotifRQ {
                         public static class Profile {
 
                             @XmlElement(name = "Customer", required = true)
-                            protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer customer;
+                            protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer customer;
                             @XmlAttribute(name = "ProfileType")
                             protected Byte profileType;
 
@@ -3797,10 +3797,10 @@ public class OTAHotelResNotifRQ {
                              * 
                              * @return
                              *     possible object is
-                             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer }
+                             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer }
                              *     
                              */
-                            public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer getCustomer() {
+                            public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer getCustomer() {
                                 return customer;
                             }
 
@@ -3809,10 +3809,10 @@ public class OTAHotelResNotifRQ {
                              * 
                              * @param value
                              *     allowed object is
-                             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer }
+                             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer }
                              *     
                              */
-                            public void setCustomer(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer value) {
+                            public void setCustomer(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer value) {
                                 this.customer = value;
                             }
 
@@ -3917,13 +3917,13 @@ public class OTAHotelResNotifRQ {
                             public static class Customer {
 
                                 @XmlElement(name = "PersonName", required = true)
-                                protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.PersonName personName;
+                                protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.PersonName personName;
                                 @XmlElement(name = "Telephone", required = true)
-                                protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Telephone telephone;
+                                protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Telephone telephone;
                                 @XmlElement(name = "Email", required = true)
-                                protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Email email;
+                                protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Email email;
                                 @XmlElement(name = "Address", required = true)
-                                protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Address address;
+                                protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Address address;
                                 @XmlAttribute(name = "VIP_Indicator")
                                 protected String vipIndicator;
 
@@ -3932,10 +3932,10 @@ public class OTAHotelResNotifRQ {
                                  * 
                                  * @return
                                  *     possible object is
-                                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.PersonName }
+                                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.PersonName }
                                  *     
                                  */
-                                public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.PersonName getPersonName() {
+                                public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.PersonName getPersonName() {
                                     return personName;
                                 }
 
@@ -3944,10 +3944,10 @@ public class OTAHotelResNotifRQ {
                                  * 
                                  * @param value
                                  *     allowed object is
-                                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.PersonName }
+                                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.PersonName }
                                  *     
                                  */
-                                public void setPersonName(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.PersonName value) {
+                                public void setPersonName(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.PersonName value) {
                                     this.personName = value;
                                 }
 
@@ -3956,10 +3956,10 @@ public class OTAHotelResNotifRQ {
                                  * 
                                  * @return
                                  *     possible object is
-                                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Telephone }
+                                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Telephone }
                                  *     
                                  */
-                                public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Telephone getTelephone() {
+                                public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Telephone getTelephone() {
                                     return telephone;
                                 }
 
@@ -3968,10 +3968,10 @@ public class OTAHotelResNotifRQ {
                                  * 
                                  * @param value
                                  *     allowed object is
-                                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Telephone }
+                                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Telephone }
                                  *     
                                  */
-                                public void setTelephone(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Telephone value) {
+                                public void setTelephone(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Telephone value) {
                                     this.telephone = value;
                                 }
 
@@ -3980,10 +3980,10 @@ public class OTAHotelResNotifRQ {
                                  * 
                                  * @return
                                  *     possible object is
-                                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Email }
+                                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Email }
                                  *     
                                  */
-                                public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Email getEmail() {
+                                public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Email getEmail() {
                                     return email;
                                 }
 
@@ -3992,10 +3992,10 @@ public class OTAHotelResNotifRQ {
                                  * 
                                  * @param value
                                  *     allowed object is
-                                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Email }
+                                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Email }
                                  *     
                                  */
-                                public void setEmail(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Email value) {
+                                public void setEmail(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Email value) {
                                     this.email = value;
                                 }
 
@@ -4004,10 +4004,10 @@ public class OTAHotelResNotifRQ {
                                  * 
                                  * @return
                                  *     possible object is
-                                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Address }
+                                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Address }
                                  *     
                                  */
-                                public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Address getAddress() {
+                                public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Address getAddress() {
                                     return address;
                                 }
 
@@ -4016,10 +4016,10 @@ public class OTAHotelResNotifRQ {
                                  * 
                                  * @param value
                                  *     allowed object is
-                                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Address }
+                                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Address }
                                  *     
                                  */
-                                public void setAddress(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Address value) {
+                                public void setAddress(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Profiles.ProfileInfo.Profile.Customer.Address value) {
                                     this.address = value;
                                 }
 
@@ -4681,7 +4681,7 @@ public class OTAHotelResNotifRQ {
                 public static class Total {
 
                     @XmlElement(name = "Taxes", required = true)
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes taxes;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes taxes;
                     @XmlAttribute(name = "AmountAfterTax")
                     protected Short amountAfterTax;
                     @XmlAttribute(name = "CurrencyCode")
@@ -4692,10 +4692,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes getTaxes() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes getTaxes() {
                         return taxes;
                     }
 
@@ -4704,10 +4704,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes }
                      *     
                      */
-                    public void setTaxes(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes value) {
+                    public void setTaxes(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes value) {
                         this.taxes = value;
                     }
 
@@ -4811,7 +4811,7 @@ public class OTAHotelResNotifRQ {
                     public static class Taxes {
 
                         @XmlElement(name = "Tax", required = true)
-                        protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax tax;
+                        protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax tax;
                         @XmlAttribute(name = "CurrencyCode")
                         protected String currencyCode;
                         @XmlAttribute(name = "Amount")
@@ -4822,10 +4822,10 @@ public class OTAHotelResNotifRQ {
                          * 
                          * @return
                          *     possible object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax }
                          *     
                          */
-                        public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax getTax() {
+                        public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax getTax() {
                             return tax;
                         }
 
@@ -4834,10 +4834,10 @@ public class OTAHotelResNotifRQ {
                          * 
                          * @param value
                          *     allowed object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax }
                          *     
                          */
-                        public void setTax(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax value) {
+                        public void setTax(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax value) {
                             this.tax = value;
                         }
 
@@ -4929,7 +4929,7 @@ public class OTAHotelResNotifRQ {
                         public static class Tax {
 
                             @XmlElement(name = "TaxDescription", required = true)
-                            protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax.TaxDescription taxDescription;
+                            protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax.TaxDescription taxDescription;
                             @XmlAttribute(name = "Amount")
                             protected Float amount;
                             @XmlAttribute(name = "Percent")
@@ -4942,10 +4942,10 @@ public class OTAHotelResNotifRQ {
                              * 
                              * @return
                              *     possible object is
-                             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax.TaxDescription }
+                             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax.TaxDescription }
                              *     
                              */
-                            public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax.TaxDescription getTaxDescription() {
+                            public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax.TaxDescription getTaxDescription() {
                                 return taxDescription;
                             }
 
@@ -4954,10 +4954,10 @@ public class OTAHotelResNotifRQ {
                              * 
                              * @param value
                              *     allowed object is
-                             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax.TaxDescription }
+                             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax.TaxDescription }
                              *     
                              */
-                            public void setTaxDescription(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax.TaxDescription value) {
+                            public void setTaxDescription(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGlobalInfo.Total.Taxes.Tax.TaxDescription value) {
                                 this.taxDescription = value;
                             }
 
@@ -5224,7 +5224,7 @@ public class OTAHotelResNotifRQ {
             public static class ResGuests {
 
                 @XmlElement(name = "ResGuest")
-                protected List<OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest> resGuest;
+                protected List<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest> resGuest;
 
                 /**
                  * Gets the value of the resGuest property.
@@ -5244,13 +5244,13 @@ public class OTAHotelResNotifRQ {
                  * 
                  * <p>
                  * Objects of the following type(s) are allowed in the list
-                 * {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest }
+                 * {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest }
                  * 
                  * 
                  */
-                public List<OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest> getResGuest() {
+                public List<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest> getResGuest() {
                     if (resGuest == null) {
-                        resGuest = new ArrayList<OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest>();
+                        resGuest = new ArrayList<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest>();
                     }
                     return this.resGuest;
                 }
@@ -5373,7 +5373,7 @@ public class OTAHotelResNotifRQ {
                 public static class ResGuest {
 
                     @XmlElement(name = "Profiles", required = true)
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles profiles;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles profiles;
                     @XmlAttribute(name = "ResGuestRPH")
                     protected Byte resGuestRPH;
                     @XmlAttribute(name = "ArrivalTime")
@@ -5387,10 +5387,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles getProfiles() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles getProfiles() {
                         return profiles;
                     }
 
@@ -5399,10 +5399,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles }
                      *     
                      */
-                    public void setProfiles(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles value) {
+                    public void setProfiles(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles value) {
                         this.profiles = value;
                     }
 
@@ -5583,17 +5583,17 @@ public class OTAHotelResNotifRQ {
                     public static class Profiles {
 
                         @XmlElement(name = "ProfileInfo", required = true)
-                        protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo profileInfo;
+                        protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo profileInfo;
 
                         /**
                          * Gets the value of the profileInfo property.
                          * 
                          * @return
                          *     possible object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo }
                          *     
                          */
-                        public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo getProfileInfo() {
+                        public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo getProfileInfo() {
                             return profileInfo;
                         }
 
@@ -5602,10 +5602,10 @@ public class OTAHotelResNotifRQ {
                          * 
                          * @param value
                          *     allowed object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo }
                          *     
                          */
-                        public void setProfileInfo(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo value) {
+                        public void setProfileInfo(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo value) {
                             this.profileInfo = value;
                         }
 
@@ -5704,17 +5704,17 @@ public class OTAHotelResNotifRQ {
                         public static class ProfileInfo {
 
                             @XmlElement(name = "Profile", required = true)
-                            protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile profile;
+                            protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile profile;
 
                             /**
                              * Gets the value of the profile property.
                              * 
                              * @return
                              *     possible object is
-                             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile }
+                             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile }
                              *     
                              */
-                            public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile getProfile() {
+                            public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile getProfile() {
                                 return profile;
                             }
 
@@ -5723,10 +5723,10 @@ public class OTAHotelResNotifRQ {
                              * 
                              * @param value
                              *     allowed object is
-                             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile }
+                             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile }
                              *     
                              */
-                            public void setProfile(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile value) {
+                            public void setProfile(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile value) {
                                 this.profile = value;
                             }
 
@@ -5815,7 +5815,7 @@ public class OTAHotelResNotifRQ {
                             public static class Profile {
 
                                 @XmlElement(name = "Customer", required = true)
-                                protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer customer;
+                                protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer customer;
                                 @XmlAttribute(name = "ProfileType")
                                 protected Byte profileType;
 
@@ -5824,10 +5824,10 @@ public class OTAHotelResNotifRQ {
                                  * 
                                  * @return
                                  *     possible object is
-                                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer }
+                                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer }
                                  *     
                                  */
-                                public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer getCustomer() {
+                                public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer getCustomer() {
                                     return customer;
                                 }
 
@@ -5836,10 +5836,10 @@ public class OTAHotelResNotifRQ {
                                  * 
                                  * @param value
                                  *     allowed object is
-                                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer }
+                                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer }
                                  *     
                                  */
-                                public void setCustomer(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer value) {
+                                public void setCustomer(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer value) {
                                     this.customer = value;
                                 }
 
@@ -5944,13 +5944,13 @@ public class OTAHotelResNotifRQ {
                                 public static class Customer {
 
                                     @XmlElement(name = "PersonName", required = true)
-                                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.PersonName personName;
+                                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.PersonName personName;
                                     @XmlElement(name = "Telephone")
-                                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Telephone telephone;
+                                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Telephone telephone;
                                     @XmlElement(name = "Email")
-                                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Email email;
+                                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Email email;
                                     @XmlElement(name = "Address")
-                                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Address address;
+                                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Address address;
                                     @XmlAttribute(name = "VIP_Indicator")
                                     protected String vipIndicator;
 
@@ -5959,10 +5959,10 @@ public class OTAHotelResNotifRQ {
                                      * 
                                      * @return
                                      *     possible object is
-                                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.PersonName }
+                                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.PersonName }
                                      *     
                                      */
-                                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.PersonName getPersonName() {
+                                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.PersonName getPersonName() {
                                         return personName;
                                     }
 
@@ -5971,10 +5971,10 @@ public class OTAHotelResNotifRQ {
                                      * 
                                      * @param value
                                      *     allowed object is
-                                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.PersonName }
+                                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.PersonName }
                                      *     
                                      */
-                                    public void setPersonName(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.PersonName value) {
+                                    public void setPersonName(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.PersonName value) {
                                         this.personName = value;
                                     }
 
@@ -5983,10 +5983,10 @@ public class OTAHotelResNotifRQ {
                                      * 
                                      * @return
                                      *     possible object is
-                                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Telephone }
+                                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Telephone }
                                      *     
                                      */
-                                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Telephone getTelephone() {
+                                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Telephone getTelephone() {
                                         return telephone;
                                     }
 
@@ -5995,10 +5995,10 @@ public class OTAHotelResNotifRQ {
                                      * 
                                      * @param value
                                      *     allowed object is
-                                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Telephone }
+                                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Telephone }
                                      *     
                                      */
-                                    public void setTelephone(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Telephone value) {
+                                    public void setTelephone(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Telephone value) {
                                         this.telephone = value;
                                     }
 
@@ -6007,10 +6007,10 @@ public class OTAHotelResNotifRQ {
                                      * 
                                      * @return
                                      *     possible object is
-                                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Email }
+                                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Email }
                                      *     
                                      */
-                                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Email getEmail() {
+                                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Email getEmail() {
                                         return email;
                                     }
 
@@ -6019,10 +6019,10 @@ public class OTAHotelResNotifRQ {
                                      * 
                                      * @param value
                                      *     allowed object is
-                                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Email }
+                                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Email }
                                      *     
                                      */
-                                    public void setEmail(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Email value) {
+                                    public void setEmail(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Email value) {
                                         this.email = value;
                                     }
 
@@ -6031,10 +6031,10 @@ public class OTAHotelResNotifRQ {
                                      * 
                                      * @return
                                      *     possible object is
-                                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Address }
+                                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Address }
                                      *     
                                      */
-                                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Address getAddress() {
+                                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Address getAddress() {
                                         return address;
                                     }
 
@@ -6043,10 +6043,10 @@ public class OTAHotelResNotifRQ {
                                      * 
                                      * @param value
                                      *     allowed object is
-                                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Address }
+                                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Address }
                                      *     
                                      */
-                                    public void setAddress(OTAHotelResNotifRQ.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Address value) {
+                                    public void setAddress(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.ResGuests.ResGuest.Profiles.ProfileInfo.Profile.Customer.Address value) {
                                         this.address = value;
                                     }
 
@@ -6773,17 +6773,17 @@ public class OTAHotelResNotifRQ {
             public static class RoomStays {
 
                 @XmlElement(name = "RoomStay", required = true)
-                protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay roomStay;
+                protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay roomStay;
 
                 /**
                  * Gets the value of the roomStay property.
                  * 
                  * @return
                  *     possible object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay }
                  *     
                  */
-                public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay getRoomStay() {
+                public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay getRoomStay() {
                     return roomStay;
                 }
 
@@ -6792,10 +6792,10 @@ public class OTAHotelResNotifRQ {
                  * 
                  * @param value
                  *     allowed object is
-                 *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay }
+                 *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay }
                  *     
                  */
-                public void setRoomStay(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay value) {
+                public void setRoomStay(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay value) {
                     this.roomStay = value;
                 }
 
@@ -7028,29 +7028,29 @@ public class OTAHotelResNotifRQ {
                 public static class RoomStay {
 
                     @XmlElement(name = "RoomTypes", required = true)
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes roomTypes;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes roomTypes;
                     @XmlElement(name = "RatePlans", required = true)
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans ratePlans;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans ratePlans;
                     @XmlElement(name = "RoomRates", required = true)
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates roomRates;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates roomRates;
                     @XmlElement(name = "GuestCounts", required = true)
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts guestCounts;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts guestCounts;
                     @XmlElement(name = "TimeSpan", required = true)
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.TimeSpan timeSpan;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.TimeSpan timeSpan;
                     @XmlElement(name = "Total", required = true)
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.Total total;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.Total total;
                     @XmlElement(name = "ResGuestRPHs", required = true)
-                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs resGuestRPHs;
+                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs resGuestRPHs;
 
                     /**
                      * Gets the value of the roomTypes property.
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes getRoomTypes() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes getRoomTypes() {
                         return roomTypes;
                     }
 
@@ -7059,10 +7059,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes }
                      *     
                      */
-                    public void setRoomTypes(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes value) {
+                    public void setRoomTypes(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes value) {
                         this.roomTypes = value;
                     }
 
@@ -7071,10 +7071,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans getRatePlans() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans getRatePlans() {
                         return ratePlans;
                     }
 
@@ -7083,10 +7083,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans }
                      *     
                      */
-                    public void setRatePlans(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans value) {
+                    public void setRatePlans(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans value) {
                         this.ratePlans = value;
                     }
 
@@ -7095,10 +7095,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates getRoomRates() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates getRoomRates() {
                         return roomRates;
                     }
 
@@ -7107,10 +7107,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates }
                      *     
                      */
-                    public void setRoomRates(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates value) {
+                    public void setRoomRates(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates value) {
                         this.roomRates = value;
                     }
 
@@ -7119,10 +7119,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts getGuestCounts() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts getGuestCounts() {
                         return guestCounts;
                     }
 
@@ -7131,10 +7131,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts }
                      *     
                      */
-                    public void setGuestCounts(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts value) {
+                    public void setGuestCounts(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts value) {
                         this.guestCounts = value;
                     }
 
@@ -7143,10 +7143,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.TimeSpan }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.TimeSpan }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.TimeSpan getTimeSpan() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.TimeSpan getTimeSpan() {
                         return timeSpan;
                     }
 
@@ -7155,10 +7155,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.TimeSpan }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.TimeSpan }
                      *     
                      */
-                    public void setTimeSpan(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.TimeSpan value) {
+                    public void setTimeSpan(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.TimeSpan value) {
                         this.timeSpan = value;
                     }
 
@@ -7167,10 +7167,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.Total }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.Total }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.Total getTotal() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.Total getTotal() {
                         return total;
                     }
 
@@ -7179,10 +7179,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.Total }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.Total }
                      *     
                      */
-                    public void setTotal(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.Total value) {
+                    public void setTotal(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.Total value) {
                         this.total = value;
                     }
 
@@ -7191,10 +7191,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @return
                      *     possible object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs }
                      *     
                      */
-                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs getResGuestRPHs() {
+                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs getResGuestRPHs() {
                         return resGuestRPHs;
                     }
 
@@ -7203,10 +7203,10 @@ public class OTAHotelResNotifRQ {
                      * 
                      * @param value
                      *     allowed object is
-                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs }
+                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs }
                      *     
                      */
-                    public void setResGuestRPHs(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs value) {
+                    public void setResGuestRPHs(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs value) {
                         this.resGuestRPHs = value;
                     }
 
@@ -7246,17 +7246,17 @@ public class OTAHotelResNotifRQ {
                     public static class GuestCounts {
 
                         @XmlElement(name = "GuestCount", required = true)
-                        protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts.GuestCount guestCount;
+                        protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts.GuestCount guestCount;
 
                         /**
                          * Gets the value of the guestCount property.
                          * 
                          * @return
                          *     possible object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts.GuestCount }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts.GuestCount }
                          *     
                          */
-                        public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts.GuestCount getGuestCount() {
+                        public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts.GuestCount getGuestCount() {
                             return guestCount;
                         }
 
@@ -7265,10 +7265,10 @@ public class OTAHotelResNotifRQ {
                          * 
                          * @param value
                          *     allowed object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts.GuestCount }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts.GuestCount }
                          *     
                          */
-                        public void setGuestCount(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts.GuestCount value) {
+                        public void setGuestCount(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.GuestCounts.GuestCount value) {
                             this.guestCount = value;
                         }
 
@@ -7431,17 +7431,17 @@ public class OTAHotelResNotifRQ {
                     public static class RatePlans {
 
                         @XmlElement(name = "RatePlan", required = true)
-                        protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan ratePlan;
+                        protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan ratePlan;
 
                         /**
                          * Gets the value of the ratePlan property.
                          * 
                          * @return
                          *     possible object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan }
                          *     
                          */
-                        public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan getRatePlan() {
+                        public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan getRatePlan() {
                             return ratePlan;
                         }
 
@@ -7450,10 +7450,10 @@ public class OTAHotelResNotifRQ {
                          * 
                          * @param value
                          *     allowed object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan }
                          *     
                          */
-                        public void setRatePlan(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan value) {
+                        public void setRatePlan(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan value) {
                             this.ratePlan = value;
                         }
 
@@ -7498,7 +7498,7 @@ public class OTAHotelResNotifRQ {
                         public static class RatePlan {
 
                             @XmlElement(name = "RatePlanDescription", required = true)
-                            protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan.RatePlanDescription ratePlanDescription;
+                            protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan.RatePlanDescription ratePlanDescription;
                             @XmlAttribute(name = "RatePlanName")
                             protected String ratePlanName;
                             @XmlAttribute(name = "RatePlanCode")
@@ -7515,10 +7515,10 @@ public class OTAHotelResNotifRQ {
                              * 
                              * @return
                              *     possible object is
-                             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan.RatePlanDescription }
+                             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan.RatePlanDescription }
                              *     
                              */
-                            public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan.RatePlanDescription getRatePlanDescription() {
+                            public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan.RatePlanDescription getRatePlanDescription() {
                                 return ratePlanDescription;
                             }
 
@@ -7527,10 +7527,10 @@ public class OTAHotelResNotifRQ {
                              * 
                              * @param value
                              *     allowed object is
-                             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan.RatePlanDescription }
+                             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan.RatePlanDescription }
                              *     
                              */
-                            public void setRatePlanDescription(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan.RatePlanDescription value) {
+                            public void setRatePlanDescription(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RatePlans.RatePlan.RatePlanDescription value) {
                                 this.ratePlanDescription = value;
                             }
 
@@ -7724,7 +7724,7 @@ public class OTAHotelResNotifRQ {
                     public static class ResGuestRPHs {
 
                         @XmlElement(name = "ResGuestRPH")
-                        protected List<OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs.ResGuestRPH> resGuestRPH;
+                        protected List<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs.ResGuestRPH> resGuestRPH;
 
                         /**
                          * Gets the value of the resGuestRPH property.
@@ -7744,13 +7744,13 @@ public class OTAHotelResNotifRQ {
                          * 
                          * <p>
                          * Objects of the following type(s) are allowed in the list
-                         * {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs.ResGuestRPH }
+                         * {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs.ResGuestRPH }
                          * 
                          * 
                          */
-                        public List<OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs.ResGuestRPH> getResGuestRPH() {
+                        public List<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs.ResGuestRPH> getResGuestRPH() {
                             if (resGuestRPH == null) {
-                                resGuestRPH = new ArrayList<OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs.ResGuestRPH>();
+                                resGuestRPH = new ArrayList<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.ResGuestRPHs.ResGuestRPH>();
                             }
                             return this.resGuestRPH;
                         }
@@ -7921,17 +7921,17 @@ public class OTAHotelResNotifRQ {
                     public static class RoomRates {
 
                         @XmlElement(name = "RoomRate", required = true)
-                        protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate roomRate;
+                        protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate roomRate;
 
                         /**
                          * Gets the value of the roomRate property.
                          * 
                          * @return
                          *     possible object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate }
                          *     
                          */
-                        public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate getRoomRate() {
+                        public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate getRoomRate() {
                             return roomRate;
                         }
 
@@ -7940,10 +7940,10 @@ public class OTAHotelResNotifRQ {
                          * 
                          * @param value
                          *     allowed object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate }
                          *     
                          */
-                        public void setRoomRate(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate value) {
+                        public void setRoomRate(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate value) {
                             this.roomRate = value;
                         }
 
@@ -8022,7 +8022,7 @@ public class OTAHotelResNotifRQ {
                         public static class RoomRate {
 
                             @XmlElement(name = "Rates", required = true)
-                            protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates rates;
+                            protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates rates;
                             @XmlAttribute(name = "EffectiveDate")
                             @XmlSchemaType(name = "date")
                             protected XMLGregorianCalendar effectiveDate;
@@ -8043,10 +8043,10 @@ public class OTAHotelResNotifRQ {
                              * 
                              * @return
                              *     possible object is
-                             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates }
+                             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates }
                              *     
                              */
-                            public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates getRates() {
+                            public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates getRates() {
                                 return rates;
                             }
 
@@ -8055,10 +8055,10 @@ public class OTAHotelResNotifRQ {
                              * 
                              * @param value
                              *     allowed object is
-                             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates }
+                             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates }
                              *     
                              */
-                            public void setRates(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates value) {
+                            public void setRates(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates value) {
                                 this.rates = value;
                             }
 
@@ -8265,7 +8265,7 @@ public class OTAHotelResNotifRQ {
                             public static class Rates {
 
                                 @XmlElement(name = "Rate")
-                                protected List<OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate> rate;
+                                protected List<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate> rate;
 
                                 /**
                                  * Gets the value of the rate property.
@@ -8285,13 +8285,13 @@ public class OTAHotelResNotifRQ {
                                  * 
                                  * <p>
                                  * Objects of the following type(s) are allowed in the list
-                                 * {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate }
+                                 * {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate }
                                  * 
                                  * 
                                  */
-                                public List<OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate> getRate() {
+                                public List<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate> getRate() {
                                     if (rate == null) {
-                                        rate = new ArrayList<OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate>();
+                                        rate = new ArrayList<OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate>();
                                     }
                                     return this.rate;
                                 }
@@ -8346,9 +8346,9 @@ public class OTAHotelResNotifRQ {
                                 public static class Rate {
 
                                     @XmlElement(name = "Base", required = true)
-                                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Base base;
+                                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Base base;
                                     @XmlElement(name = "Total", required = true)
-                                    protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Total total;
+                                    protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Total total;
                                     @XmlAttribute(name = "UnitMultiplier")
                                     protected Byte unitMultiplier;
                                     @XmlAttribute(name = "EffectiveDate")
@@ -8363,10 +8363,10 @@ public class OTAHotelResNotifRQ {
                                      * 
                                      * @return
                                      *     possible object is
-                                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Base }
+                                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Base }
                                      *     
                                      */
-                                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Base getBase() {
+                                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Base getBase() {
                                         return base;
                                     }
 
@@ -8375,10 +8375,10 @@ public class OTAHotelResNotifRQ {
                                      * 
                                      * @param value
                                      *     allowed object is
-                                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Base }
+                                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Base }
                                      *     
                                      */
-                                    public void setBase(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Base value) {
+                                    public void setBase(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Base value) {
                                         this.base = value;
                                     }
 
@@ -8387,10 +8387,10 @@ public class OTAHotelResNotifRQ {
                                      * 
                                      * @return
                                      *     possible object is
-                                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Total }
+                                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Total }
                                      *     
                                      */
-                                    public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Total getTotal() {
+                                    public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Total getTotal() {
                                         return total;
                                     }
 
@@ -8399,10 +8399,10 @@ public class OTAHotelResNotifRQ {
                                      * 
                                      * @param value
                                      *     allowed object is
-                                     *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Total }
+                                     *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Total }
                                      *     
                                      */
-                                    public void setTotal(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Total value) {
+                                    public void setTotal(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomRates.RoomRate.Rates.Rate.Total value) {
                                         this.total = value;
                                     }
 
@@ -8748,17 +8748,17 @@ public class OTAHotelResNotifRQ {
                     public static class RoomTypes {
 
                         @XmlElement(name = "RoomType", required = true)
-                        protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType roomType;
+                        protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType roomType;
 
                         /**
                          * Gets the value of the roomType property.
                          * 
                          * @return
                          *     possible object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType }
                          *     
                          */
-                        public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType getRoomType() {
+                        public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType getRoomType() {
                             return roomType;
                         }
 
@@ -8767,10 +8767,10 @@ public class OTAHotelResNotifRQ {
                          * 
                          * @param value
                          *     allowed object is
-                         *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType }
+                         *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType }
                          *     
                          */
-                        public void setRoomType(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType value) {
+                        public void setRoomType(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType value) {
                             this.roomType = value;
                         }
 
@@ -8814,7 +8814,7 @@ public class OTAHotelResNotifRQ {
                         public static class RoomType {
 
                             @XmlElement(name = "RoomDescription", required = true)
-                            protected OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType.RoomDescription roomDescription;
+                            protected OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType.RoomDescription roomDescription;
                             @XmlAttribute(name = "RoomID")
                             protected Byte roomID;
                             @XmlAttribute(name = "RoomType")
@@ -8827,10 +8827,10 @@ public class OTAHotelResNotifRQ {
                              * 
                              * @return
                              *     possible object is
-                             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType.RoomDescription }
+                             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType.RoomDescription }
                              *     
                              */
-                            public OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType.RoomDescription getRoomDescription() {
+                            public OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType.RoomDescription getRoomDescription() {
                                 return roomDescription;
                             }
 
@@ -8839,10 +8839,10 @@ public class OTAHotelResNotifRQ {
                              * 
                              * @param value
                              *     allowed object is
-                             *     {@link OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType.RoomDescription }
+                             *     {@link OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType.RoomDescription }
                              *     
                              */
-                            public void setRoomDescription(OTAHotelResNotifRQ.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType.RoomDescription value) {
+                            public void setRoomDescription(OTAHotelResNotifRQRequest.HotelReservations.HotelReservation.RoomStays.RoomStay.RoomTypes.RoomType.RoomDescription value) {
                                 this.roomDescription = value;
                             }
 
